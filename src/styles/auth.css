@@ -1,0 +1,195 @@
+body {
+  background: #f3f3f3;
+  font-family: Arial;
+}
+
+.auth-container {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 10px;
+  background: #febd69;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-container button:hover {
+  background: #f3a847;
+}
+/* BACKGROUND */
+.auth-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef2f7;
+}
+
+/* CARD */
+.auth-card {
+  width: 380px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* LOGO */
+.logo {
+  width: 45px;
+  height: 45px;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: auto;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.auth-card h2 {
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* TOGGLE */
+.toggle {
+  display: flex;
+  background: #f1f1f1;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.toggle button,
+.toggle a {
+  flex: 1;
+  padding: 8px;
+  text-align: center;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+
+.toggle .active {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.auth-card label {
+  font-size: 13px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* FORGOT */
+.forgot {
+  text-align: right;
+  font-size: 12px;
+  color: #3b82f6;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+/* BUTTON */
+.main-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+
+  /* WRAPPER */
+  .auth-wrapper {
+    padding: 15px;
+  }
+
+  /* CARD FULL WIDTH ON MOBILE */
+  .auth-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  /* LOGO SMALLER */
+  .logo {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+
+  /* TITLE */
+  .auth-card h2 {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  /* INPUT FIELDS */
+  .auth-card input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* BUTTON */
+  .main-btn {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  /* TOGGLE BUTTONS */
+  .toggle button,
+  .toggle a {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* FORGOT PASSWORD */
+  .forgot {
+    font-size: 11px;
+  }
+}

@@ -1,0 +1,167 @@
+.pd-loading {
+  text-align: center;
+  margin-top: 60px;
+  color: #666;
+}
+
+.pd-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* BACK BUTTON */
+.pd-back {
+  background-color: #1a5dc7;
+  border: none;
+  font-size: 15px;
+  color:white;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 10px;
+
+}
+
+/* CARD */
+.pd-card {
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.pd-image-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  min-height: 300px;
+}
+
+.pd-image-box img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+/* INFO */
+.pd-info {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* CATEGORY */
+.pd-category {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+/* TITLE */
+.pd-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.4;
+}
+
+/* RATING */
+.pd-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  font-size: 18px;
+  color: #ddd;
+}
+
+.star.filled {
+  color: #f5a623;
+}
+
+.pd-rating-text {
+  font-size: 13px;
+  color: #666;
+}
+
+/* PRICE */
+.pd-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2874f0;
+}
+
+/* DESCRIPTION */
+.pd-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ADD TO CART BUTTON */
+.pd-btn {
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #2874f0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.pd-btn:hover {
+  background: #1a5dc7;
+}
+
+.pd-btn-added {
+  background: #4caf50;
+}
+
+.pd-btn-added:hover {
+  background: #388e3c;
+}
+
+/* GO TO CART BUTTON */
+.pd-cart-btn {
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  background: white;
+  color: #2874f0;
+  border: 2px solid #2874f0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.pd-cart-btn:hover {
+  background: #2874f0;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 650px) {
+  .pd-card {
+    flex-direction: column;
+  }
+}

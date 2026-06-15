@@ -1,0 +1,280 @@
+.cart-container {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cart-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+}
+
+/* LIST */
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ITEM */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: 0.3s;
+  position: relative;
+}
+
+/* HOVER EFFECT */
+.cart-item:hover {
+  transform: scale(1.02);
+}
+
+/* IMAGE */
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* DETAILS */
+.cart-details {
+  flex: 1;
+}
+
+.cart-details h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  min-height: 40px;
+}
+
+.cart-details p {
+  font-weight: bold;
+  color: #333;
+}
+
+/* QUANTITY CONTROLS */
+.qty {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+/* MINUS BUTTON */
+.qty button:first-child {
+  background: #ddd;
+}
+
+/* PLUS BUTTON (GREEN) */
+.qty button:last-child {
+  background: green;
+  color: white;
+}
+
+.qty button {
+  padding: 5px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.qty span {
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* REMOVE BUTTON */
+.cart-item button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cart-item button:hover {
+  background: #e60000;
+}
+
+/* SELECTED ITEM */
+.selected {
+  border: 2px solid #4caf50;
+  background: #f0fff4;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #4caf50;
+  color: white;
+  font-size: 12px;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+/* TOTAL */
+.total {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.checkout-btn:hover {
+  background: darkgreen;
+}
+
+/* BUY NOW BUTTON */
+.buy-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 48px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* SHINE EFFECT */
+.buy-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: left 0.4s ease;
+}
+
+.buy-btn:hover::before {
+  left: 125%; /* shine slides across on hover */
+}
+
+.buy-btn:hover {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(76, 175, 80, 0.5);
+}
+
+.buy-btn:active {
+  transform: translateY(0px);
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+}
+@media (max-width: 768px) {
+
+  .cart-container {
+    padding: 15px;
+  }
+
+  .cart-title {
+    font-size: 22px;
+  }
+
+  /* CART ITEM STACK VERTICALLY */
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  /* IMAGE SMALLER */
+  .cart-item img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /* DETAILS FULL WIDTH */
+  .cart-details {
+    width: 100%;
+  }
+
+  .cart-details h4 {
+    font-size: 14px;
+    min-height: auto;
+  }
+
+  .cart-details p {
+    font-size: 14px;
+  }
+
+  /* QTY CONTROLS CENTER */
+  .qty,
+  .qty-controls {
+    justify-content: flex-start;
+    gap: 5px;
+  }
+
+  .qty button,
+  .qty-controls button {
+    padding: 4px 10px;
+    font-size: 14px;
+  }
+
+  /* REMOVE BUTTON FULL WIDTH */
+  .cart-item button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* BADGE SMALLER */
+  .badge {
+    font-size: 10px;
+    padding: 2px 6px;
+  }
+
+  /* TOTAL TEXT */
+  .total {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  /* BUY BUTTON MOBILE */
+  .buy-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    border-radius: 12px;
+  }
+}

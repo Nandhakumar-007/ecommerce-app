@@ -1,0 +1,70 @@
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 20px;
+}
+
+.success-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 50px 40px;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  max-width: 480px;
+  width: 100%;
+}
+
+/* CHECKMARK ICON */
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: white;
+  margin: 0 auto 24px auto;
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.4);
+}
+
+.success-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.success-msg {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 32px;
+}
+
+.success-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.success-home-btn {
+  padding: 13px 32px;
+  background: linear-gradient(135deg, #4caf50, #2e7d32);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.success-home-btn:hover {
+  background: linear-gradient(135deg, #43a047, #1b5e20);
+  transform: translateY(-1px);
+}
