@@ -42,7 +42,7 @@ https://github.com/Nandhakumar-007/ecommerce-app
 Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/Nandhakumar-007>
 ```
 
 Navigate to the project directory:
